@@ -103,7 +103,19 @@ function loadx()
 	document.write("</body></html>");
 	break;
 
-
+	case "?icecream":
+	var number=getParameterByName('number', "1");
+	var type=getParameterByName('scoop', "Cup");
+	var flavour=getParameterByName('scoop', "Vanilla");
+	var price=getParameterByName('price', "6.50");
+	var notes=getParameterByName('notes', "0000")	
+	document.write("<h2>Icecream Entry</h2>");
+	document.write("Number of Scoops:" + number+"<br>");
+	document.write("Cup or Cone:" + type+"<br>");
+	document.write("Flavours:" + flavour+"<br>");
+	document.write("Price:" + price+"<br>");
+	document.write("Notes:" + notes+"<br>");		
+	break;	
 
 	case "?login":
 	window.location="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=login";
